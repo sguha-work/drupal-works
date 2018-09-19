@@ -1,0 +1,22 @@
+sudo apt install curl php-cli php-mbstring git unzip
+  455  cd ~
+  456  curl -sS https://getcomposer.org/installer -o composer-setup.php
+  457  HASH=544e09ee996cdf60ece3804abc52599c22b1f40f4323403c44d44fdfdd586475ca9813a858088ffbc1f233e9b180f061
+  458  php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+  459  sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+  460  composer
+  461  clear
+  462  composer create-prohect drupal-composer/drupal-project:8.x-dev Composer-Drupal --stability dev --no-interaction
+  463  composer create-project drupal-composer/drupal-project:8.x-dev Composer-Drupal --stability dev --no-interaction
+  464  sudo apt-get install php-xml
+  465  composer create-project drupal-composer/drupal-project:8.x-dev Composer-Drupal --stability dev --no-interaction
+  
+*****************************************************************************
+    sudo apt-get install php7.0-gd
+    sudo apt-get install php7.2-gd
+    sudo apt-get install php7.2-intl
+    sudo apt-get install php7.2-xsl
+    composer create-project drupal-composer/drupal-project:8.x-dev Composer-Drupal --stability dev --no-interaction
+    sudo apt-get install php-curlsudo apt-get install php-curl
+    sudo apt-get install php-curl
+    composer create-project drupal-composer/drupal-project:8.x-dev Composer-Drupal --stability dev --no-interaction
